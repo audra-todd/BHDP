@@ -1,0 +1,198 @@
+/****** GENERAL ********/
+
+body {
+	font-family: 'BenchNine', sans-serif;
+  margin: 0 auto;
+
+}
+
+a:hover,
+a:visited,
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+/******* HEADING ********/
+
+header {
+  float: left;
+  margin: 10px auto;
+  padding: 0 5% 0 5%;
+  width: 90%;
+}
+
+#logo {
+  text-align: left;
+}
+
+h1 {
+  font-family: 'BenchNine', sans-serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: .8em;
+  color: #ccc;
+}
+
+h2 {
+  margin: 10px auto 2px auto;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+
+
+/****** FOOTER **********/
+
+footer {
+  font-weight: 300;
+  font-size: 1.2em;
+  clear: both;
+  color: #aaa;
+} 
+
+/****** PAGES ***********/
+/*CONTACT*/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.25em; 
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  padding: 0 0 0 30px;
+  margin: 0 0 0 0;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone_white.png');
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail_white.png');
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.contact-info li.instagram a {
+  background-image: url('../img/instagram_try.png');
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+
+/******* COLORS *********/
+
+/*Site Body*/
+body {
+	background-color: #333;
+}
+
+/*nav bg on mobile ------------------
+nav {
+ background: #333; 
+}
+-------------------------------*/
+
+/*Links*/
+a {
+ color: #bbb;
+}
+
+/*nav link*/
+nav a, nav a:visited {
+  color: #bbb;
+}
+
+h2 {
+  color: #888;
+}
+
+h3 {
+  color: #555;
+}
+
+p {
+  color: #888;
+  padding-bottom: 1em;
+}
+
+
+/*Background on Reel Page*/
+#reelbody {
+background-color: #000;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.main-footer {
+  list-style: none;
+  padding-top: .25em;
+  border-top: solid .05em #aaa;
+}
+
+.img-responsive {
+  padding-bottom: 1em;
+  max-width: 900px;
+}
+
+.about {
+  border-top: solid .05em #aaa;
+  padding-top: 1.5em;
+}
+
+.topper {
+  border-bottom: solid .05em #aaa;
+}
+
+.methods {
+  border-bottom: solid .05em #aaa;
+}
+
+.mestre {
+  padding: 2em 0 2em 0;
+}
+
+.screencap {
+  padding-top: 2em;
+  border-bottom: solid .05em #aaa;
+}
+
+
+.skill + .exp {
+  opacity: 0;
+  transition: opacity 1s;
+  position: relative;
+  z-index:101;
+}
+.skill:hover + .exp {
+  opacity: 1;
+  z-index: 99;
+}
+
+.exp {
+  position: absolute;
+  top: -2em;
+  left: 2em;
+  z-index:100;
+}

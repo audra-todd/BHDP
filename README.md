@@ -6,5 +6,5 @@ I wanted to make sure that in using high quality images for the site, we weren't
 
 VIEWING THE SITE: To view, simply run INDEX.HTML This site is intended for use on mobile, tablet, and desk or laptop screens.
 
-Javascript Components include the dropdown menu as well as words that appear over the Music Video images upon Hover.  A lightbox is intended to further show screen captures from various Music Videos.
+Javascript Components include the dropdown menu as well as words that appear over the Music Video images upon Hover.  JQuery is linked at the bottom of HTML docs employing the framework.  A lightbox is intended to further show screen captures from various Music Videos.
 This site will continue to be built and improved upon.

@@ -2,7 +2,8 @@
 
 body {
 	font-family: 'BenchNine', sans-serif;
-  margin: 0 auto;
+  margin: auto;
+  max-width: 100%;
 
 }
 
@@ -24,13 +25,6 @@ p {
 
 /******* HEADING ********/
 
-header {
-  float: left;
-  margin: 10px auto;
-  padding: 0 5% 0 5%;
-  width: 90%;
-}
-
 #logo {
   text-align: left;
 }
@@ -50,77 +44,59 @@ h2 {
 }
 
 h3 {
-  font-size: 1em;
+  font-size: .5em;
 }
 
+h4 {
+  font-size: 2em;
+}
+
+h5 {
+  font-size: 1.5em;
+}
 
 
 /****** FOOTER **********/
 
 footer {
-  font-weight: 300;
-  font-size: 1.2em;
-  clear: both;
   color: #aaa;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  clear: both;
 } 
 
 /****** PAGES ***********/
-/*CONTACT*/
-
-.contact-info {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 1.25em; 
+.email {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: .8em;
 }
 
-.contact-info a {
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 25px 25px;
-  padding: 0 0 0 30px;
-  margin: 0 0 0 0;
+.phone {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: .8em;
 }
-
-.contact-info li.phone a {
-  background-image: url('../img/phone_white.png');
-  font-family: 'Alegreya Sans', sans-serif;
-}
-
-.contact-info li.mail a {
-  background-image: url('../img/mail_white.png');
-  font-family: 'Alegreya Sans', sans-serif;
-}
-
-.contact-info li.instagram a {
-  background-image: url('../img/instagram_try.png');
-  font-family: 'Alegreya Sans', sans-serif;
-}
-
 
 /******* COLORS *********/
 
 /*Site Body*/
 body {
-	background-color: #333;
+	background-color: #1a1a1a;
 }
 
-/*nav bg on mobile ------------------
-nav {
- background: #333; 
-}
--------------------------------*/
 
 /*Links*/
 a {
  color: #bbb;
+ z-index: 200;
 }
 
 /*nav link*/
 nav a, nav a:visited {
   color: #bbb;
 }
+
+/*Labels & Paragraphs*/
 
 h2 {
   color: #888;
@@ -130,10 +106,15 @@ h3 {
   color: #555;
 }
 
+h4 {
+  color: #ccc;
+}
+
 p {
   color: #888;
-  padding-bottom: 1em;
 }
+
+
 
 
 /*Background on Reel Page*/
@@ -143,39 +124,49 @@ background-color: #000;
 
 iframe {
   max-width: 100%;
-}
+  margin-top: 0;
+  margin-bottom: 2em;
+  }
+
+
+/*Containing Portions to do Special CSS*/
 
 .main-footer {
-  list-style: none;
+  
   padding-top: .25em;
   border-top: solid .05em #aaa;
+  margin-bottom: -2em;
 }
 
 .img-responsive {
-  padding-bottom: 1em;
   max-width: 900px;
 }
 
-.about {
-  border-top: solid .05em #aaa;
-  padding-top: 1.5em;
-}
 
 .topper {
   border-bottom: solid .05em #aaa;
 }
 
 .methods {
+  padding-bottom: 1.5em;
   border-bottom: solid .05em #aaa;
+  font-size: 1.5em;
 }
 
 .mestre {
   padding: 2em 0 2em 0;
 }
 
-.screencap {
-  padding-top: 2em;
-  border-bottom: solid .05em #aaa;
+.torchimage {
+  padding: 2em 0 0 0;
+}
+
+.video-wrapper {
+
+}
+
+.mestrethumb {
+  padding-top: 3em;
 }
 
 
@@ -184,15 +175,129 @@ iframe {
   transition: opacity 1s;
   position: relative;
   z-index:101;
+  bottom: 0em;
+  text-align: center;
 }
 .skill:hover + .exp {
   opacity: 1;
   z-index: 99;
 }
 
-.exp {
-  position: absolute;
-  top: -2em;
-  left: 2em;
+.exp:hover {
   z-index:100;
 }
+
+.screencap {
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+
+/** ABOUT PAGE**/
+.about-container {
+  position: relative;
+  max-width: 900px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.details {
+  padding-top: 2em;
+}
+
+#container {
+  position: relative;
+  max-width: 900px;
+}
+#image {
+  position: absolute;
+  left: 0;
+  max-width: 900px;
+  top: 0;
+}
+#text {
+  z-index: 10;
+  position: absolute;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 300;
+  bottom: 0em;
+  text-align: justify;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 1em;
+}
+
+.nav {
+  float: right;
+}
+
+/****************************/
+@media (max-width: 767px) {
+  img {
+    display: block;
+    margin: auto;
+  }
+
+  #text {
+    position: relative;
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: -1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  } 
+
+  .container {
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+
+  .page-header {
+    border-bottom: solid .05em #aaa;
+  }
+
+  .topper,
+  .page-header,
+  #logo {
+    display: block;
+    text-align: center;
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-paragraph {
+    padding-top: -10em;
+  }
+
+
+  .nav,
+  .nav-pills {
+      display: inline-block;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: -.5em;
+  }
+
+  .methods {
+    padding-bottom: 0;
+  }
+
+  footer {
+    padding-top: 2em;
+    padding-left: 2.25em;
+    padding-right: 2.25em;
+  }
+
+  .details {
+    text-align: center;
+    padding-bottom: -2em;
+  }
+
+  iframe {
+    padding-top: -4em;
+  }
+}
+
